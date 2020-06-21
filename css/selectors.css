@@ -57,7 +57,7 @@ ul li:nth-child(2) {
     text-decoration: none;
     background-color: darkgrey;
     color: black;
-    padding: 1% 1%;
+    padding: 1% 0.5%;
 }
 
 #menu {
