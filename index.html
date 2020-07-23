@@ -4,58 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egy szuper oldal</title>
-    <link rel="stylesheet" href="css/style2.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
-    <ul id="menu">
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/pages/products.html">Products</a>
-        </li>
-        <li>
-            <a href="/pages/orders.html">Orders</a>
-        </li>
-        <li>
-            <a href="/pages/about.html">About</a>
-        </li>
-        <li>
-            <a href="/pages/selectors.html">Login</a>
-        </li>
-        <li>
-            <a href="/pages/stilusos.html">Stilusos</a>
-        </li>
-    </ul>
+    <h3>Kitti Palacsintasütödéje</h3>
+    <div class="img-div">
+        <img id="sutes" src="./img/P_20190316_164617.jpg" alt="sutes">
+    </div>
+    <h1>Palacsinta rendelés</h1>
+    <div class="container">
+        <div class="row texxt">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form class="urlapok" action="">
+                    <div class="form-group">
+                        <label for="toltelek">Válassz tölteléket:</label>
+                        <select id="toltelekek" name="top-input" class="form-control" onChange="tvalasztas()">
+                            <option value="Diós">Diós</option>
+                            <option value="Nutellás">Nutellás</option>
+                            <option value="Kakaós">Kakaós</option>
+                            <option value="Baracklekváros">Baracklekváros</option>
+                            <option value="Szilvalekváros">Szilvalekváros</option>
+                            <option value="Túrós">Túrós</option>
+                            <option value="Vaníliapudingos">Vaníliapudingos</option>
+                            <option value="Almareszelékes">Almareszelékes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ontetek">Válassz öntetet:</label>
+                        <select id="ontetek" name="ontetek" class="form-control" onChange="ovalasztas()">
+                            <option value="Nem kérek öntetet">Nem kérek öntetet</option>
+                            <option value="Tejszínhab">Tejszínhab</option>
+                            <option value="Vaníliaöntet">Vaníliaöntet</option>
+                            <option value="Csokoládéöntet">Csokoládéöntet</option>
+                        </select>      
+                    </div>
+                    <div class="form-group">
+                        <label for="mennyiseg">Mennyiség:</label>
+                        <input  id="mennyiseg" type="number" name="amount-input" value="1" class="form-control" onChange="calcAmount()">
+                        <small class="form-text">
+							Minimum 1, maximum 10 db
+						</small>
+                    </div>
+                    <div class="form-group">
+                        Választott töltelék: <span class="valasztott"></span><br>
+                        Opcionális öntet: <span class="ontet"></span><br>
+                        Fizetendő: <span class="show-amount">0</span>Ft
+					</div>
+                    <button onclick="calcAmount()" type="button" class="btn btn-primary">Kosárba</button>
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
 
+    <script src="./js/main.js"></script>
 
-    <h1>Fantastic Burger</h1>
-    <ul>
-        <li>Meat lover
-            <ul>
-                <li>Beef</li>
-                <li>Pork</li>
-                <li>Turkey</li>
-            </ul>
-        </li>
-        <li>Vegetarian</li>
-        <li>Piedone</li>
-    </ul>
-    <h2>Additions</h2>
-    <ol>
-        <li>Tomato</li>
-        <li>Apple</li>
-        <li>Pepper</li>
-        <li>Hot chili sauce</li>
-    </ol>
-
-    <a target="blank" href="http://magyarkonyhaonline.hu/vilaghiru-lett-a-magyar-hamburger"><img width="56"
-            src="img/burger.jpg" alt="burger"></a>
-    <a href="http://magyarkonyhaonline.hu/vilaghiru-lett-a-magyar-hamburger">Cikk</a>
-
-    <a href="pages/orders.html">Orders</a>
 
 
 </body>
