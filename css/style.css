@@ -1,0 +1,57 @@
+body {
+    background-image: url("../img/fa.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment:fixed;
+
+}
+
+.texxt {
+    background-image: url("../img/hatter.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+h3 {
+    color: white;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1%;
+    text-align: center;
+    border: solid 1px;
+}
+h1 {
+    color: black;
+    margin: 1%;
+    text-align: center;
+}
+
+.form-group {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    box-shadow: 3px 3px 7px black;
+    margin: 1%;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 25px;
+}
+
+img {
+    width: 25%;
+    box-shadow: 3px 3px 7px black;
+    margin: 1%;
+}
+
+#sutes {
+    position: fixed;
+    top: 45px;
+    left: 10px;
+}
+
+#kemence {
+    position: fixed;
+    top: 45px;
+    right: 10px;
+}
