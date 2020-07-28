@@ -14,44 +14,49 @@ body {
     margin-top: 5%;
 }
 
-h3 {
+.heed {
     color: white;
-    padding: 1%;
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0%;
+    background-color: rgba(0, 0, 0, 0.1);
     margin: 1%;
     text-align: center;
-    border: solid 1px;
 }
-h1 {
-    color: black;
-    margin: 1%;
+h3 {
+    color: white;
     text-align: center;
 }
 
-.form-group {
+.gr {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5%;
     box-shadow: 3px 3px 7px black;
     margin: 1%;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 25px;
-}
-
-img {
-    width: 25%;
-    box-shadow: 3px 3px 7px black;
-    margin: 1%;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 25px;
 }
 
 #sutes {
-    position: fixed;
-    top: 45px;
-    left: 10px;
+    display: inline-block;
+    margin:15px;
+    width: 350px;
 }
 
-#kemence {
-    position: fixed;
-    top: 45px;
-    right: 10px;
+
+.loginf {
+    display: inline-block;
+    box-shadow: 3px 3px 7px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1%;
+    padding: 1%;
+}
+
+
+
+.cim {
+    text-align: center;
+}
+
+.kosar {
+    margin-top: 30px;
 }

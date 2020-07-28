@@ -42,3 +42,24 @@ function ovalasztas() {
 	console.log(ontetText);
     showOntet.innerHTML = ontetText;
 }
+
+function login() {
+	let email = document.querySelector("input[id='exampleInputEmail1']");
+	let pass = document.querySelector("input[id='exampleInputPassword1']");
+	let sucess = document.querySelector("span.show-smiley");
+	
+	if (email.value != "elekesemese@gmail.com" || email.value == "") {
+		alert("Nincs ilyen email címmel regisztrált felhasználónk!");
+	} else {
+		bejelentkezes();
+	}
+
+	function bejelentkezes() {
+		if (pass.value != "kardhal" || pass.value =="") {
+			alert("Hibás jelszó!");
+		} else {
+			sucess.innerHTML = "Hello";
+		}
+	}
+
+}
