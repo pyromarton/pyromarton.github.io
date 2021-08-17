@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="cim">
+        <h2>Kitti Palacsintasütödéje</h2>
+    </div>
+    <div class="row heed">
+        <div class="col-sm">
+            <div class="img-div">
+                <img id="sutes" src="./img/P_20190316_164617.jpg" alt="sutes">
+            </div>
+        </div>
+        <div class="col-sm">
+            <form class="loginf">
+                <div class="login-form">
+                    <label for="exampleInputEmail1">Email cím</label>
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="login-form">
+                    <label for="exampleInputPassword1">Jelszó</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="login-form form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Jegyezze meg</label>
+                </div>
+                <div class="login-form">
+                    <button onclick="login()" type="button" class="btn btn-primary">Bejelentkezés</button>
+                </div>
+                <div class="login-form">
+                    <span class="show-smiley"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row texxt">
+            <div class="col-2"></div>
+            <div class="col-8 col-sm gr">
+                <h3>Palacsinta rendelés</h3>
+                <form class="urlapok" action="">
+                    <div class="form-group">
+                        <label for="toltelek">Válassz tölteléket:</label>
+                        <select id="toltelekek" name="top-input" class="form-control" onChange="tvalasztas()">
+                            <option value="Diós">Diós</option>
+                            <option value="Nutellás">Nutellás</option>
+                            <option value="Kakaós">Kakaós</option>
+                            <option value="Baracklekváros">Baracklekváros</option>
+                            <option value="Szilvalekváros">Szilvalekváros</option>
+                            <option value="Túrós">Túrós</option>
+                            <option value="Vaníliapudingos">Vaníliapudingos</option>
+                            <option value="Almareszelékes">Almareszelékes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ontetek">Válassz öntetet:</label>
+                        <select id="ontetek" name="ontetek" class="form-control" onChange="ovalasztas()">
+                            <option value="Nem kérek öntetet">Nem kőő</option>
+                            <option value="Tejszínhab">Tejszínhab</option>
+                            <option value="Vaníliaöntet">Vaníliaöntet</option>
+                            <option value="Csokoládéöntet">Csokoládéöntet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mennyiseg">Mennyiség:</label>
+                        <input id="mennyiseg" type="number" name="amount-input" value="1" class="form-control"
+                            onChange="calcAmount()">
+                        <small class="form-text">
+                            Minimum 1, maximum 10 db
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        Választott töltelék: <span class="valasztott"></span><br>
+                        Opcionális öntet: <span class="ontet"></span><br>
+                        Fizetendő: <span class="show-amount">0</span>Ft
+                    </div>
+                    <button onclick="calcAmount()" type="button" class="btn btn-primary">Kosárba</button>
+                </form>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <div class="container kosar">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <table class="table table-striped table-bordered table-sm table-hover">
+                    <thead>
+                        <tr class="table-active">
+                            <th>ID</th>
+                            <th>Mennyiség</th>
+                            <th>Töltelék</th>
+                            <th>Öntet</th>
+                            <th>Összeg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>Diós</td>
+                            <td>Nem kérek öntetet</td>
+                            <td>500 Ft</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="/js/proba.js"></script>
+    
+
+
+</body>
+
+</html>

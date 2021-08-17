@@ -1,0 +1,62 @@
+body {
+    background-image: url("../img/fa.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment:fixed;
+
+}
+
+.texxt {
+    background-image: url("../img/hatter.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.heed {
+    color: white;
+    padding: 0%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 1%;
+    text-align: center;
+}
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.gr {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    box-shadow: 3px 3px 7px black;
+    margin: 1%;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 25px;
+}
+
+#sutes {
+    display: inline-block;
+    margin:15px;
+    width: 350px;
+}
+
+
+.loginf {
+    display: inline-block;
+    box-shadow: 3px 3px 7px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1%;
+    padding: 1%;
+}
+
+
+
+.cim {
+    text-align: center;
+}
+
+.kosar {
+    margin-top: 30px;
+}
